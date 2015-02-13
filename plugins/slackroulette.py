@@ -152,8 +152,11 @@ def command_leave(channel):
 
 # Respond to an unknown command
 def command_unknown(channel):
-  send_message(channel, "Command not recognized. " +
-                        "Type !help to see what commands are availble!")
+  send_message(channel, "Command not recognized.\n" +
+                        "Type !online to become available to other people\n" +
+                        "Type !offline to stop participating\n" +
+                        "Type !spin to start a conversation\n" +
+                        "Type !leave to leave the current conversation")
 
 
 ################################################################################
